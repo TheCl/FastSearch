@@ -1,0 +1,219 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+ul{
+	list-style: none;
+}
+a{
+	text-decoration: none;
+	color: white;
+}
+body{
+	background: black;
+	font-family: 'Open Sans', Arial, sans-serif;
+}
+
+/* Начало хедера ----------- начало хедера ----*/
+header{
+	height: 240px;
+	width: 100%;
+	background-image: url("../img/back_head.png");
+    background-position: top center;
+    background-color: rgba(255,255,255,0.50);
+}
+.wrapper{
+	width: 1000px;
+	margin: 0 auto;
+   position: relative;
+}
+nav{
+	margin: 0 auto;
+	width: 100%;
+	height: 100px;
+	background: #e74c3c;
+    position: fixed;
+}
+nav li {
+	display: inline-block;
+	float: right;
+}
+nav .logo{
+	padding: 20px 0 20px 21px;
+} 
+nav .logo:hover{
+filter: invert(1);
+}
+
+nav ul li a{
+	color: #f5bbb5;
+	font-size: 16px;
+	text-transform: uppercase;
+	padding: 40px 20px;
+	display: block;
+	transition: all 0.5s ease;
+	border-bottom: 2px solid none;
+	text-shadow: 1px 1px 0 black;
+}
+nav ul li a:hover, 
+nav ul li.active a{
+	background: #f46758;
+	color: #fff;
+	border-bottom: 2px solid white;
+}
+
+/* Конец хедера .......*/
+
+/*Секция 1*/
+.history_and_value{
+	background-color: #fff;
+	padding: 100px 0;
+	font-size: 14px;
+	color: #3e3e3e;
+}
+.history_and_value .wrapper{
+	display: flex;
+}
+.history_and_value h2,
+.oport_and_test h2{
+	padding-bottom: 35px;
+	text-transform: uppercase;
+}
+.history_and_value ul li{
+padding-bottom: 30px;
+}
+.history_and_value ul li::before{
+	content: "";
+	background-image: url("../img/li_marker.png");
+	background-repeat: no-repeat;
+	background-position: left center;
+	padding-right: 10px;
+}
+.pt_30{
+	padding-top: 30px;
+	display: block;
+}
+.history_and_value .history{
+	margin-right: 20px;
+}
+/* ВТОРАЯ СЕКЦИЯ_____*/
+.why_us{
+	background-color: #df5b4d;
+	padding: 50px 0 60px 0;
+	color: white;
+	font-size: 13px;
+}
+.why_us h2{
+	font-size: 38px;
+	text-transform: uppercase;
+	text-align: center;
+	font-weight: lighter;
+	padding-bottom: 50px;
+}
+.why_us_flex{
+	display: flex;
+}
+.why_us_flex span{
+	display: block;
+	margin-right: 20px;
+	text-align: center;
+}
+.why_us_flex span:last-child{
+	margin-right: 0;
+}
+/*СЕКЦИЯ ТРИ....*/
+.oport_and_test{
+	background-color: #fff;
+	padding: 100px 0;
+	font-size: 14px;
+}
+.oport_and_test .wrapper{
+	display: flex;
+}
+.oportunities{
+	margin-right: 20px;
+}
+.testimonials{
+
+}
+.oportunities .comment p::first-line{
+	color: #df5b4d;
+	margin-bottom: 20px;
+	display:block;
+}
+#owl-demo_2 {
+	width: 490px;
+	height: auto;
+}
+#owl-demo_3 {
+	width: 490px;
+	height: auto;
+}
+/*Футер.......Футер.......*/
+
+footer{
+	font-size: 12px;	
+	color: #fff;
+	background-color: black;
+	padding: 30px;
+	height: 100%;
+}
+footer .wrapper{
+	display: grid;
+	grid-template-columns:repeat(4, [col] 205px);
+	grid-template-rows:repeat(3, [row] 76px);
+	grid-gap: 15px;
+	justify-content:space-between;
+}
+
+.footer_info img{
+	float: left;
+	margin:0px 10px 5px 0;
+}
+footer h3, .slider h3{
+	text-transform: uppercase;
+	font-size: 18px;
+	padding-bottom: 25px;
+	font-weight: bold;
+	white-space: nowrap;
+	}
+	.location .contacts p{
+		white-space: pre-line;
+
+	}
+ .location .contacts .first_line {
+margin-bottom: 10px;
+}
+.footer_info {
+	min-height: 235px;
+	border-right: 2px solid red;
+}
+.hidden{
+	visibility: hidden;
+}
+footer .red{
+	color: #db574a;
+}
+.social_wrap{
+	margin-top: 20px;
+}
+.social{
+	display: inline-block;
+	width: 25px;
+	height: 14px;
+	background-image: url("../img/social_sprite.png");
+	background-repeat: no-repeat;
+}
+.tw{
+	background-position: 0 0;
+}
+.fb{
+	background-position: -25px 0;
+}
+.gg{
+	background-position: -50px 0;
+}
+
+.pp{
+	background-position: -75px 0;
+}

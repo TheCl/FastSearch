@@ -1,0 +1,196 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+ul{
+	list-style: none;
+}
+a{
+	text-decoration: none;
+	color: white;
+}
+body{
+	background: black;
+	font-family: 'Open Sans', Arial, sans-serif;
+}
+
+/* Начало хедера ----------- начало хедера ----*/
+header{
+	height: 240px;
+	width: 100%;
+	background-image: url("../img/back_head.png");
+    background-position: top center;
+    background-color: rgba(255,255,255,0.50);
+}
+.wrapper{
+	width: 1000px;
+	margin: 0 auto;
+   position: relative;
+}
+nav{
+	margin: 0 auto;
+	width: 100%;
+	height: 100px;
+	background: #e74c3c;
+    position: fixed;
+}
+nav li {
+	display: inline-block;
+	float: right;
+}
+nav .logo{
+	padding: 20px 0 20px 21px;
+} 
+nav .logo:hover{
+filter: invert(1);
+}
+
+nav ul li a{
+	color: #f5bbb5;
+	font-size: 16px;
+	text-transform: uppercase;
+	padding: 40px 20px;
+	display: block;
+	transition: all 0.5s ease;
+	border-bottom: 2px solid none;
+	text-shadow: 1px 1px 0 black;
+}
+nav ul li a:hover, 
+nav ul li.active a{
+	background: #f46758;
+	color: #fff;
+	border-bottom: 2px solid white;
+}
+/* КОНЕЦ ХЕДЕРА .......*/
+
+/*СЕКЦИЯ 1 */
+.contacts{
+	background-color: #fff;
+	padding: 100px 0;
+	font-size: 14px;
+	color: #3e3e3e;
+}
+.contacts .wrapper{
+	display: flex;
+	align-items: top;
+}
+.contacts h2{
+	padding-bottom: 35px;
+	text-transform: uppercase;
+}
+.say_hi{
+	margin-right: 30px;
+}
+.say_hi span{
+	margin-bottom: 30px;
+	display: inline-block;
+}
+.say_hi input, textarea{
+	width: 100%;
+	margin-bottom: 10px;
+	background-color: #f7f7f7;
+	font-size: 15px;
+	color: #8c8c8c;
+	height: 45px;
+	border: none;
+	border-radius: 2px;
+	padding-left: 15px;
+}
+.say_hi textarea{
+	height: 165px;
+	padding-top: 15px;
+}
+.say_hi button{
+	background-color: #e74c3c;
+	color: white;
+	font-size: 16px;
+	width: 100%;
+	height: 45px;
+	text-transform: uppercase;
+	cursor: pointer;
+}
+.bla-bla{
+	display: grid;
+	grid-template-columns:repeat(2, [col] 49.3%);
+	grid-template-rows:repeat(1, [row] auto);
+    grid-gap: 40px;
+    white-space: pre-line;
+    justify-content: space-between;
+}
+.location span{
+	line-height: 20px;
+}
+.location .map{
+	padding-bottom: 20px;
+}
+.location a span{
+	text-decoration: underline;
+}
+/*ФУТЕР.........*/
+footer{
+	font-size: 12px;	
+	color: #fff;
+	background-color: black;
+	padding: 30px;
+	height: 100%;
+}
+footer .wrapper{
+	display: grid;
+	grid-template-columns:repeat(4, [col] 205px);
+	grid-template-rows:repeat(3, [row] 76px);
+	grid-gap: 15px;
+	justify-content:space-between;
+}
+
+.footer_info img{
+	float: left;
+	margin:0px 10px 5px 0;
+}
+footer h3, .slider h3{
+	text-transform: uppercase;
+	font-size: 18px;
+	padding-bottom: 25px;
+	font-weight: bold;
+	white-space: nowrap;
+	}
+	.location_footer .contacts p{
+		white-space: pre-line;
+
+	}
+ .location_footer .contacts .first_line {
+margin-bottom: 10px;
+}
+.footer_info {
+	min-height: 235px;
+	border-right: 2px solid red;
+}
+.hidden{
+	visibility: hidden;
+}
+  .red{
+	color: #db574a;
+}
+
+.social_wrap{
+	margin-top: 20px;
+}
+.social{
+	display: inline-block;
+	width: 25px;
+	height: 14px;
+	background-image: url("../img/social_sprite.png");
+	background-repeat: no-repeat;
+}
+.tw{
+	background-position: 0 0;
+}
+.fb{
+	background-position: -25px 0;
+}
+.gg{
+	background-position: -50px 0;
+}
+
+.pp{
+	background-position: -75px 0;
+}

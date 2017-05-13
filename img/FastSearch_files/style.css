@@ -1,0 +1,209 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+ul{
+	list-style: none;
+}
+a{
+	text-decoration: none;
+	color: white;
+}
+body{
+	background: #363636;
+	font-family: 'Open Sans', Arial, sans-serif;
+}
+
+/* Начало хедера ----------- начало хедера ----*/
+header{
+	height: 700px;
+	width: 100%;
+	background-image: url("../img/back_head.jpg");
+    background-position: top center;
+}
+.wrapper{
+	width: 1000px;
+	margin: 0 auto;
+   position: relative;
+}
+nav{
+	margin: 0 auto;
+	background-color:yellow;
+	width: 100%;
+	height: 100px;
+	background: #e74c3c;
+    position: fixed;
+}
+nav li {
+	display: inline-block;
+	float: right;
+}
+nav .logo{
+	padding: 20px 0 20px 21px;
+} 
+nav .logo:hover{
+filter: invert(1);
+}
+
+nav ul li a{
+	color: #f5bbb5;
+	font-size: 16px;
+	text-transform: uppercase;
+	padding: 40px 20px;
+	display: block;
+	transition: all 0.5s ease;
+	border-bottom: 2px solid none;
+	text-shadow: 1px 1px 0 black;
+}
+nav ul li a:hover, 
+nav ul li.active a{
+	background: #f46758;
+	color: #fff;
+	border-bottom: 2px solid white;
+}
+.banner h1{
+	font-size: 64px;
+	color: white;
+	text-transform: uppercase;
+	white-space: nowrap;
+	margin: 180px 0 0 0;
+	display:block;
+	text-align: center;
+	font-weight: lighter;
+	text-shadow: 4px 4px 0 black;
+}
+.banner .banner_text{
+	font-size: 20px;
+	color: #fff;
+	text-align: center;
+	display: block;
+	width: 640px;
+	margin: 40px auto 0 auto;
+	margin-bottom: 80px;
+	text-shadow: 1px 2px 0 black;
+}
+.learn{
+	margin: 0 auto;
+	display: block;
+	width: 210px;
+	height: 50px;
+	border:1px solid #9b9b9b;
+	cursor: pointer;
+	background: #404040;
+	color: white;
+	font-size: 16px;
+	text-transform: uppercase;
+}
+.learn:hover{
+	color: #e74c3c;
+}
+
+/* Конец хедера .......*/
+
+.why_we_are{
+	background-color: #fff;
+	padding: 100px 0;
+	font-size: 14px;
+}
+.why_we_are .wrapper{
+	display: flex;
+	justify-content: space-between;
+}
+
+.red{
+	color: #e74c3c;
+}
+.why_we_are h3{
+	text-transform: uppercase;
+	font-size: 22px;
+	padding-bottom: 32px;
+}
+.best, .clients{
+	width: 49%;
+}
+/* Вторая секция ,,,,,,,,,,,,,,,,*/
+.can_we_help{
+	background-color: #db574a;
+	padding: 50px 0;
+	background-image: url(../img/back_people.png);
+	background-repeat:repeat-x;
+	background-position: top center;
+}
+.can_we_help .wrapper{
+	display: flex;
+	color: white;
+	font-size: 14px;
+}
+.can_we_help h2{
+	text-transform: uppercase;
+	font-size: 38px;
+	color: white;
+	font-weight: lighter;
+	text-align: center;
+	display: block;
+	padding-bottom: 55px;
+}
+.hcwh{
+	margin-right: 20px;
+	text-align: center;
+}
+.hcwh_4{
+	margin-right: 0;
+	background-image: url("../img/BATTERY_2.png") no-repeat;
+	background-position: top center;
+}
+.hcwh img{
+	padding-bottom: 60px;
+	margin: 0 auto;
+	display: block;
+}
+.hcwh img:hover{
+	filter: invert(1);
+}
+
+/*Третья секция ........*/
+
+
+
+/*Футер.......Футер.......*/
+
+footer{
+	font-size: 12px;	
+	color: #fff;
+	background-color: black;
+	padding: 30px;
+	height: 100%;
+}
+footer .wrapper{
+	display: grid;
+	grid-template-columns:repeat(4, [col] 211px);
+	grid-template-rows:repeat(3, [row] 76px);
+	grid-gap: 15px;
+	justify-content:space-between;
+}
+
+.footer_info img{
+	float: left;
+	margin:0px 10px 0px 0;
+}
+footer h3{
+	text-transform: uppercase;
+	font-size: 18px;
+	padding-bottom: 25px;
+	font-weight: bold;
+	white-space: nowrap;
+	}
+	.location .contacts p{
+		white-space: pre-wrap;
+	}
+ .location .contacts p:first-line {
+color: red;
+display: inline-block;
+padding-bottom: 10px;
+}
+.footer_info {
+	min-height: 235px;
+}
+.hidden{
+	visibility: hidden;
+}
