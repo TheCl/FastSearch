@@ -61,83 +61,78 @@ nav ul li.active a{
 	color: #fff;
 	border-bottom: 2px solid white;
 }
-/* КОНЕЦ ХЕДЕРА .......*/
 
-/*СЕКЦИЯ 1 */
-.contacts{
+/* Конец хедера .......*/
+
+/*Секция 1*/
+
+
+.b-popup{
+    width:100%;
+    min-height:100%;
+    background-color: rgba(0,0,0,0.5);
+    overflow:hidden;
+    position:fixed;
+    top:0px;
+    right: 0;
+    display: none;
+}
+.b-popup .b-content{
+    margin:20px auto 0px auto;
+    width:90%;
+    height:90%;
+    padding:40px;
+    background-color: #c5c5c5;
+    border-radius:5px;
+    border:2px solid black;
+    box-shadow: 0px 0px 10px #000;
+    z-index: 999;
+    line-height: 20px;
+}
+.b-content img{
+	width: 80%;
+    margin: 0 auto;
+    display: block;
+}
+.blog{
 	background-color: #fff;
 	padding: 100px 0;
 	font-size: 14px;
 	color: #3e3e3e;
 }
-.contacts .wrapper{
-	display: flex;
-	align-items: top;
-}
-.contacts h2{
+
+.blog h2{
 	padding-bottom: 35px;
 	text-transform: uppercase;
 }
-.say_hi{
-	margin-right: 30px;
+.blog .wrapper{
+	display: grid;
+	grid-template-columns:repeat(2, [col] 50%);
+	grid-template-rows:repeat(2, [row] auto);
+    grid-gap: 20px;
 }
-.say_hi span{
-	margin-bottom: 30px;
-	display: inline-block;
+.blog .wrapper img{
+	padding-bottom: 20px;
+	cursor: pointer;
 }
-.say_hi input, textarea{
-	width: 100%;
-	margin-bottom: 10px;
-	background-color: #f7f7f7;
-	font-size: 15px;
-	color: #8c8c8c;
-	height: 45px;
-	border: none;
-	border-radius: 2px;
-	padding-left: 15px;
-}
-.say_hi textarea{
-	height: 165px;
+.blog .wrapper cite{
+	color: grey;
+	font-style: italic;
+	display: block;
 	padding-top: 15px;
 }
-.say_hi button{
-	background-color: #e74c3c;
-	color: white;
-	font-size: 16px;
-	width: 100%;
-	height: 45px;
-	text-transform: uppercase;
-	cursor: pointer;
-	transition: all 0.3s ease;
+#item {
+	
 }
-.say_hi button:active{
-	border: 3px solid black;
-	background-color: brown;
-}
-.bla-bla{
-	display: grid;
-	grid-template-columns:repeat(2, [col] 49.3%);
-	grid-template-rows:repeat(1, [row] auto);
-    grid-gap: 40px;
-    white-space: pre-line;
-    justify-content: space-between;
-}
-.location span{
-	line-height: 20px;
-}
-.location .map{
-	padding-bottom: 20px;
-}
-.location a span{
-	text-decoration: underline;
-}
-/*ФУТЕР.........*/
+/*Футер.......Футер.......*/
+
 footer{
 	font-size: 12px;	
 	color: #fff;
 	background-color: black;
 	padding: 30px;
 	height: 100%;
+	z-index: 1;
 }
 footer .wrapper{
 	display: grid;
@@ -158,11 +153,11 @@ footer h3, .slider h3{
 	font-weight: bold;
 	white-space: nowrap;
 	}
-	.location_footer .contacts p{
+	.location .contacts p{
 		white-space: pre-line;
 
 	}
- .location_footer .contacts .first_line {
+ .location .contacts .first_line {
 margin-bottom: 10px;
 }
 .footer_info {
@@ -172,10 +167,9 @@ margin-bottom: 10px;
 .hidden{
 	visibility: hidden;
 }
-  .red{
+footer .red{
 	color: #db574a;
 }
-
 .social_wrap{
 	margin-top: 20px;
 }
